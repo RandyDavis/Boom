@@ -4,7 +4,7 @@ require 'json'
 require 'oauth'
 require 'pry-byebug'
 set :bind, '0.0.0.0'
-use Rack::Flash
+# use Rack::Flash
 
 get "/" do
   # binding.pry
@@ -51,6 +51,6 @@ get "/" do
 end
 
 
-get "/" do
+# get "/" do
 
-end
+# end
