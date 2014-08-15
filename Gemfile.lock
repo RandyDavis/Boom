@@ -26,6 +26,8 @@ GEM
       rack
     rack-protection (1.5.3)
       rack
+    shotgun (0.9)
+      rack (>= 1.0)
     simple_oauth (0.2.0)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -47,6 +49,7 @@ DEPENDENCIES
   oauth
   pry-byebug
   rack-flash3
+  shotgun
   sinatra
   sinatra-redirect-with-flash
   yelp

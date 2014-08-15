@@ -7,3 +7,4 @@ gem "rack-flash3"
 gem "sinatra-redirect-with-flash"
 gem 'yelp'
 gem 'oauth'
+gem 'shotgun'

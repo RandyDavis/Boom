@@ -3,6 +3,7 @@ require 'yelp'
 require 'json'
 require 'oauth'
 require 'pry-byebug'
+require 'shotgun'
 set :bind, '0.0.0.0'
 # use Rack::Flash
 

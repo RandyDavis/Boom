@@ -54,12 +54,14 @@
         <div class="col-lg-6">
           <h1>Kill Indecision</h1>
           <form class="form-inline" role="form" action="/randombar" method="POST">
-            <button type="submit" class="btn btn-warning btn-lg" value"Bar">Find Me a Bar!</button>
-          </form> 
+            <input type="submit" class="btn btn-warning btn-lg btn-block" value="Find a Bar" />
+          </form><br /> 
           <form class="form-inline right" role="form" action="/randomrestaurant" method="POST">
-            <button type='submit' class="btn btn-warning btn-lg" value='Restaurant'>Find Me Somewhere to Eat!</button>
-          </form>  
-          <%= yield %>       
+            <input type="submit" class="btn btn-warning btn-lg btn-block" value="Find a Restaurant" />
+          </form><br>
+            <div id="result" class="col-lg-12" >
+              <%= yield %>       
+            </div>  
         </div><!-- /col-lg-6 -->
         <div class="col-lg-6">
           <img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
