@@ -6,6 +6,12 @@ require 'pry-byebug'
 set :bind, '0.0.0.0'
 # use Rack::Flash
 
+get "/" do 
+  @restaurant = nil
+  @bar        = nil
+  erb :index
+end
+
 get "/randomrestaurant" do
   # binding.pry
 

@@ -1,4 +1,7 @@
-<%= @restaurant["name"] %><br />
-<a href="<%= @restaurant["url"] %>">Site</a><br />
-<%= @restaurant["categories"].map { |x| x.first }.join(", ") %><br />
-<%= @restaurant["location"]["display_address"].join(" ") %><br />
+<% if @restaurant  %>
+  <%= @restaurant["name"] %><br />
+  <a href="<%= @restaurant["url"] %>">Site</a><br />
+  <%= @restaurant["categories"].map { |x| x.first }.join(", ") %><br />
+  <%= @restaurant["location"]["display_address"].join(" ") %><br />
+<% end %>
+<%= @restaurant %>
