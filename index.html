@@ -65,6 +65,11 @@
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /headerwrap -->
+
+  <%= @restaurant["name"] %><br />
+<a href="<%= @restaurant["url"] %>">Site</a><br />
+<%= @restaurant["categories"].map { |x| x.first }.join(", ") %><br />
+<%= @restaurant["location"]["display_address"].join(" ") %><br />
 	
     <!-- Bootstrap core JavaScript
     ================================================== -->
