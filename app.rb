@@ -12,7 +12,7 @@ get "/" do
   erb :index
 end
 
-get "/randomrestaurant" do
+post "/randomrestaurant" do
   # binding.pry
 
   data = {
@@ -49,7 +49,7 @@ get "/randomrestaurant" do
   consumer = OAuth::Consumer.new(consumer_key, consumer_secret, {:site => "http://api.yelp.com"})
   access_token = OAuth::AccessToken.new(consumer, token, token_secret)
 
-  @search_response = JSON(access_token.get(path).body)
+  @search_response = JSON(access_token.get(random_path).body)
   @restaurant = @search_response["businesses"].shuffle.first
 
   # @restaurant = search_response['businesses'].first['name']
@@ -68,7 +68,7 @@ get "/randomrestaurant" do
   erb :index
 end
 
-get "/randombar" do
+post "/randombar" do
   # binding.pry
 
   data = {
@@ -105,7 +105,7 @@ get "/randombar" do
   consumer = OAuth::Consumer.new(consumer_key, consumer_secret, {:site => "http://api.yelp.com"})
   access_token = OAuth::AccessToken.new(consumer, token, token_secret)
 
-  @search_response = JSON(access_token.get(path).body)
+  @search_response = JSON(access_token.get(random_path).body)
   @restaurant = @search_response["businesses"].shuffle.first
 
   # @restaurant = search_response['businesses'].first['name']
