@@ -5,4 +5,4 @@ gem 'pry-byebug'
 gem "sinatra"
 gem "rack-flash3"
 gem "sinatra-redirect-with-flash"
-gem 'yelp', require: 'yelp'
+gem 'yelp'
